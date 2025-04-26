@@ -29,11 +29,11 @@ jobs:
 
     - name: Build Backend Image
       run: |
-        docker build -t ${{ env.DOCKERHUB_USERNAME }}/fullstack-backend:latest ./backend
+        docker build -t ${{ env.DOCKERHUB_USERNAME }}/fullstack-backend:latest ./full-stack-app/backend
 
     - name: Build Frontend Image
       run: |
-        docker build -t ${{ env.DOCKERHUB_USERNAME }}/fullstack-frontend:latest ./frontend
+        docker build -t ${{ env.DOCKERHUB_USERNAME }}/fullstack-frontend:latest ./full-stack-app/frontend
 
     - name: Push Backend Image
       run: |
